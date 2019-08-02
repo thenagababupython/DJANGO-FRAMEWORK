@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>Feedback form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    li{
+        list-style-type: none;
+    }
+</style>
+<body>
+{#navbar#}
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+ <a class="active bg-light" href="/data">Enquiry Data</a>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <h2 class="text-white offset-md-4" id="cen">ENQUIRY FORM</h2>
+  </div>
+</nav>
+<br>
+
+{#enquiry form#}
+<div class="container-fulid">
+    <div class="row bg-light">
+        <div class="offset-md-3 col-md-6">
+    <h2 class="text-danger">Please Enter Your Details</h2>
+            <form method="post">
+                {% csrf_token %}
+              <h6>  {{ eform }}<br> </h6>
+                <input type="submit" value="submit" class="btn btn-success offset-md-3">
+                <input type="reset" value="clear" class="btn btn-danger">
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<!-- Main footer -->
+<footer class="p-0 bg-primary text-white text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Copyright &copy; 2019 , NAGABABU</h3>
+                <h6>All Rights Reserved</h6>
+                <h6>Developed & Maintained by NagaBabu</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+

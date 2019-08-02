@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Emp Data</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    td,th{
+        padding: 10px 2px;
+        font-size: 20px;
+        background-color: aqua;
+    }
+    body{
+        background-color: cyan;
+    }
+</style>
+<body>
+{#navbar#}
+<nav class="navbar navbar-expand-lg navbar-light bg-cyan">
+ <a class="active bg-light" href="/data">Enquiry Data</a> <br>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <h2 class="text-white offset-md-4" id="cen">ENQUIRY FORM</h2>
+  </div>
+</nav>
+<br>
+
+
+{#naarayana#}
+{% if edata %}
+    <center>
+        <h2>enquiry data</h2>
+    <table border="10px">
+    <thead>
+            <tr>
+                <th>enquiry id</th>
+                <th>enquiry name</th>
+                <th>enquiry email</th>
+                <th>enquiry mobile</th>
+                <th>enquiry skills</th>
+                <th>enquiry locations</th>
+                <th>enquiry gender</th>
+                <th>enquiry date</th>
+            </tr>
+    </thead>
+        {% for i in edata %}
+    <tbody>
+        <tr>
+            <td class="text-center">{{ i.id }}</td>
+            <td class="text-center">{{ i.name }}</td>
+            <td class="text-center">{{ i.email  }}</td>
+            <td class="text-center">{{ i.mobile }}</td>
+            <td class="text-center">{{ i.skills }}</td>
+            <td class="text-center">{{ i.locations }}</td>
+            <td class="text-center">{{ i.gender }}</td>
+            <td class="text-center">{{ i.date }}</td>
+        </tr>
+    </tbody>
+        {% endfor %}
+    </table>
+    </center>
+{% else %}
+<h2>data is not available</h2>
+{% endif %}
+</body>
+</html>
