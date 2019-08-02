@@ -17,10 +17,11 @@
  ==========================================================================================================================================
  1.create datbase 'databasename';
  2.use 'databasename';
- 3. show databases;
+ 3.show databases;
  4.show tables;
  5.select * from 'table name';
  6.truncate table 'tablename';
+ 7.drop database 'databasename'
  
 
  DJANGO INSTALLATIONS:
