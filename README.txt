@@ -28,8 +28,14 @@ DJANGO WITH MYSQL CONNECTION (MYSQL COMMANDS DATABASE):
        1.python manage.py shell
        2.from django.db import connection
        3.x=connection.cursor()
-
-  
+       
+   ====>After migration file:
+       ----------------------
+       modelname-------->table name
+       Field Name ------>coloum name
+       Field Type------->data types
+       
+      1.sql migrate appname 0001-----sql code shows
 
  DJANGO INSTALLATIONS:
  =========================================================================================================================================
