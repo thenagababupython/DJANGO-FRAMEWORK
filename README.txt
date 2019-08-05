@@ -23,7 +23,7 @@ DJANGO WITH MYSQL CONNECTION (MYSQL COMMANDS DATABASE):
  6.truncate table 'tablename';
  7.drop database 'databasename'
   
-   ===>verfiy connection with settings.py file database connection by using 'cursor()' function in python shell:
+   ====>verfiy connection with settings.py file database connection by using 'cursor()' function in python shell:
        ---------------------------------------------------------------------------------------------------------
        1.python manage.py shell
        2.from django.db import connection
@@ -36,6 +36,13 @@ DJANGO WITH MYSQL CONNECTION (MYSQL COMMANDS DATABASE):
        Field Type------->data types
        
       1.sql migrate appname 0001-----sql code shows
+      
+   =====>IN DJANGO CASCADEING RULES:
+         ----------------------------
+         1.DO_NOTHING
+         2.SET_NULL
+         3.SET(VALUE)
+         4.CASCADE
 
  DJANGO INSTALLATIONS:
  =========================================================================================================================================
