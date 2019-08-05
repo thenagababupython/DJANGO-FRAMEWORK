@@ -11,6 +11,10 @@ class Student(models.Model):
 
 
 class Courses(models.Model):
-    abc=models.OneToOneField(Student)
+    # abc=models.OneToOneField(Student)
+    # abc=models.OneToOneField(Student,on_delete=models.DO_NOTHING)
+    # abc=models.OneToOneField(Student,on_delete=models.SET_NULL,null=True)
+    # abc=models.OneToOneField(Student,on_delete=models.SET(6),null=True)
+    abc=models.OneToOneField(Student,on_delete=models.CASCADE,null=True)
     cname=models.CharField(max_length=100)
     cost=models.IntegerField()
