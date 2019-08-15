@@ -53,3 +53,20 @@ DJANGO WITH MYSQL CONNECTION (MYSQL COMMANDS DATABASE):
  4.pip install pillow
  5.pip install djangorestframework
  
+===============================================================================================================================
+DATABASES = {
+    'default': {
+        'NAME': 'my_db_name',
+        'ENGINE': 'mysql.connector.django',   # 'django.db.backends.mysql'
+        'USER': '<user>',
+        'PASSWORD': '<pass>',
+        'HOST': 'localhost',
+        'PORT': 3306,
+        'OPTIONS': {
+            'autocommit': True,
+        },
+    }
+}
+If you use 'ENGINE': 'mysql.connector.django' , install driver executing:
+
+$ pip install mysql-connector-python
