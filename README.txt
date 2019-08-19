@@ -70,3 +70,11 @@ DATABASES = {
 If you use 'ENGINE': 'mysql.connector.django' , install driver executing:
 
 $ pip install mysql-connector-python
+====================================================================================================
+makemigrations problem;
+------------------------------
+SILENCED_SYSTEM_CHECKS = [
+    'admin.E408',
+    'admin.E409',
+    'admin.E410',
+]
