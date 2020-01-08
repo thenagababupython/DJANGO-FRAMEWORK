@@ -78,3 +78,29 @@ SILENCED_SYSTEM_CHECKS = [
     'admin.E409',
     'admin.E410',
 ]
+==========================================================================================================
+views topic:
+------------
+
+views---Browser        ----->HttpResponse
+views---htm(template)  ----->render()
+views---views          ------>redirect()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
