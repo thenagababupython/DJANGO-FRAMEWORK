@@ -90,7 +90,9 @@ views---views          ------>redirect()
 template:
 
         'DIRS': [os.path.join(BASE_DIR, 'templates')]
-
+apps:
+-----
+'templateapp.apps.TemplateappConfig',
 
 
 
