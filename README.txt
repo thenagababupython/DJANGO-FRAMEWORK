@@ -86,6 +86,12 @@ views---Browser        ----->HttpResponse
 views---htm(template)  ----->render()
 views---views          ------>redirect()
 
+========================================================================================================================
+template:
+
+        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+
+
 
 
 
